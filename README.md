@@ -1,6 +1,6 @@
 # DorkVerse
 
-Google dorks collection for bug bounty hunting. Built this to save time instead of searching for dorks manually every time.
+A powerful reconnaissance tool designed for security researchers. Built this to save time instead of searching for dorks manually every time.
 
 ## What's in here
 
