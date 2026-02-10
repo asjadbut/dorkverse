@@ -10,7 +10,7 @@ The domain you enter gets saved in localStorage so you don't have to keep typing
 
 ## Usage
 
-Just open index.html in your browser. Enter your target domain, use the filters if you want, and click on any dork to either copy it or search Google with it.
+Just open [dorkverse](https://asjadbut.github.io/dorkverse/) in your browser. Enter your target domain, use the filters if you want, and click on any dork to either copy it or search Google with it.
 
 The filters let you narrow things down by tech (PHP, Node, React, Django, etc.) or by what you're hunting for (SQLi, XSS, SSRF, exposed configs, API keys, that kind of stuff).
 
