@@ -1,55 +1,33 @@
-# DorkVerse - Reconnaissance Tool
+# DorkVerse
 
-A comprehensive Google Dorks tool for bug bounty hunters with 400+ dorks, smart filtering, and automatic domain insertion.
+Google dorks collection for bug bounty hunting. Built this to save time instead of searching for dorks manually every time.
 
-## 🌟 Features
+## What's in here
 
-- **400+ Enhanced Dorks**: Complete coverage for modern web apps
-- **Smart Filtering**: 30+ tech stacks, 40+ vulnerability types
-- **Domain Persistence**: Auto-save target domain in localStorage
-- **Quick Actions**: Copy to clipboard or search directly in Google
-- **Real-time Search**: Filter dorks by keyword instantly
+Around 400+ dorks covering most of the common stuff you'd want to find during recon. Has filters for different tech stacks and vulnerability types which makes it easier to narrow down what you're looking for.
 
-## 🚀 Quick Start
+The domain you enter gets saved in localStorage so you don't have to keep typing it. You can either copy the dork to use elsewhere or just click search to run it directly in Google.
 
-1. Open `index.html` in your browser
-2. Enter target domain (e.g., `example.com`)
-3. Filter by tech stack or vulnerability type
-4. Click "Search" to run dork or "Copy" to clipboard
+## Usage
 
-## 📦 Files
+Just open index.html in your browser. Enter your target domain, use the filters if you want, and click on any dork to either copy it or search Google with it.
 
-```
-DorkVerse/
-├── index.html          # Main UI
-├── styles.css          # Styling
-├── app.js              # Logic
-├── dorks-database.js   # 400+ dorks
-└── README.md           # Docs
-```
+The filters let you narrow things down by tech (PHP, Node, React, Django, etc.) or by what you're hunting for (SQLi, XSS, SSRF, exposed configs, API keys, that kind of stuff).
 
-## 🎯 Dork Categories
+## What kind of dorks are included
 
-**Tech Stacks**: PHP, WordPress, Laravel, Django, Flask, FastAPI, Node.js, Express, React, Next.js, Angular, Vue, Spring Boot, AWS, Azure, GCP, Firebase, Docker, Kubernetes, MongoDB, Redis, Elasticsearch, RabbitMQ, Kafka, Jenkins, Grafana
+Covers the usual suspects - SQL injection, XSS, file inclusion, SSRF, RCE, IDOR, authentication bypasses, access control issues. Also has dorks for finding exposed configs, backups, API keys, cloud storage buckets, admin panels, sensitive documents, PII, and various framework-specific stuff.
 
-**Vulnerabilities**: SQLi, XSS, LFI/RFI, SSRF, RCE, IDOR, XXE, SSTI, Deserialization, CORS, CRLF, JWT, OAuth, SAML, NoSQL/LDAP Injection, Prototype Pollution, Auth Bypass, Broken Access Control
+There's coverage for common frameworks like WordPress, Laravel, Django, Flask, Spring Boot, React, Angular, and Vue. Plus cloud platforms (AWS, Azure, GCP), databases, CI/CD tools, and monitoring dashboards.
 
-**Critical Finds**: Cloud storage (S3, Blob, Firebase), PII (SSN, credit cards), API keys (40+ services), Internal docs, Payment gateways, Webhooks, CI/CD configs, Database credentials, JWT secrets, OAuth tokens
+## Disclaimer
 
-**Infrastructure**: Backups, configs, logs, admin panels, API endpoints, GraphQL, gRPC, WebSockets, monitoring dashboards, source maps, version control exposure
+Only use this on targets you have permission to test. Unauthorized access is illegal and you'll get in trouble. Don't be stupid.
 
-## ⚠️ Disclaimer
+## Contributing
 
-**Authorized testing only.** Get explicit permission before testing any target. Unauthorized access is illegal.
+If you've got dorks that work well, feel free to fork and send a PR. Always looking to expand the collection.
 
-## 🤝 Contributing
-
-Fork at [github.com/asjadbut/dorkverse](https://github.com/asjadbut/dorkverse) → Add dorks → Submit PR
-
-## 👨‍💻 Author
+## Author
 
 [@asjadbut](https://github.com/asjadbut)
-
----
-
-**Happy Hunting! 🔍**
