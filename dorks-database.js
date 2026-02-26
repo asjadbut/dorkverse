@@ -471,6 +471,38 @@ const dorksDatabase = [
         tech: [],
         vuln: ["backup", "disclosure"]
     },
+
+    // File Type Discovery Dorks (standalone by extension)
+    {
+        title: "PDF Documents (All)",
+        query: 'site:{DOMAIN} ext:pdf',
+        tech: [],
+        vuln: ["filetype"]
+    },
+    {
+        title: "Word Documents (DOC/DOCX)",
+        query: 'site:{DOMAIN} (ext:doc OR ext:docx)',
+        tech: [],
+        vuln: ["filetype"]
+    },
+    {
+        title: "Text Files (TXT)",
+        query: 'site:{DOMAIN} ext:txt',
+        tech: [],
+        vuln: ["filetype"]
+    },
+    {
+        title: "Excel Spreadsheets (XLS/XLSX)",
+        query: 'site:{DOMAIN} (ext:xls OR ext:xlsx)',
+        tech: [],
+        vuln: ["filetype"]
+    },
+    {
+        title: "PowerPoint Presentations (PPT/PPTX)",
+        query: 'site:{DOMAIN} (ext:ppt OR ext:pptx)',
+        tech: [],
+        vuln: ["filetype"]
+    },
     {
         title: "Password Files",
         query: 'site:{DOMAIN} inurl:password OR inurl:passwd OR inurl:pwd OR inurl:pass OR inurl:credentials OR inurl:auth OR inurl:secret OR inurl:token OR inurl:key',

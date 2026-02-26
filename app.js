@@ -290,7 +290,8 @@ function formatVulnName(vuln) {
         'login': 'Login Pages',
         'admin': 'Admin Panels',
         'api': 'API',
-        'subdomain': 'Subdomains'
+        'subdomain': 'Subdomains',
+        'filetype': 'File Types'
     };
     
     return names[vuln] || vuln.toUpperCase();
